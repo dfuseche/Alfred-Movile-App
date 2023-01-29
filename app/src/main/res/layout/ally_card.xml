@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ally_card"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:layout_margin="20dp"
+    android:background="@color/background_cards">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_cards">
+        <TextView
+            android:id="@+id/ciudadAliado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:text="Ciudad"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/direccionAliado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Dirección"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+        </TextView>
+        <TextView
+            android:id="@+id/nombreAliado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="68dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="Nombre"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+        </TextView>
+        <TextView
+            android:id="@+id/celularAliado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="96dp"
+            android:text="Celular"
+            android:textColor="@color/white"
+            android:textSize="15sp">
+        </TextView>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

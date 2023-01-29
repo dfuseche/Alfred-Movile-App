@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/goBackCarRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="290dp"
+            android:layout_marginBottom="1dp"
+            android:text="Devolver"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="340dp"
+            android:layout_height="563dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="118dp"
+            android:background="@drawable/drawable_circular_edges"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/CarRegisterButton"
+                    android:layout_width="159dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginBottom="52dp"
+                    android:background="@drawable/green_gradient"
+                    android:backgroundTintMode="add"
+                    android:fontFamily="@font/actorfont"
+                    android:text="Registrar Carro"
+                    android:textColor="@color/background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/noConnectionRCar"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="75dp"
+                    android:singleLine="false"
+                    android:text="No es posible registrar el carro por falta de conexión"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nestedScrollView"
+                    android:layout_width="340dp"
+                    android:layout_height="446dp"
+                    android:layout_marginBottom="117dp"
+                    android:fillViewport="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/carPlateInput"
+                                    android:layout_width="265dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="218dp"
+                                    android:backgroundTint="@color/background"
+                                    android:ems="10"
+                                    android:fontFamily="@font/actorfont"
+                                    android:hint="Placa"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLength="6"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/contraseñaText2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="27dp"
+                                    android:layout_marginTop="440dp"
+                                    android:fontFamily="@font/actorfont"
+                                    android:text="Modelo"
+                                    android:textColor="@color/background"
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/contraseñaText4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="24dp"
+                                    android:layout_marginTop="520dp"
+                                    android:fontFamily="@font/actorfont"
+                                    android:text="Descripción"
+                                    android:textColor="@color/background"
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/contraseñaText5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="24dp"
+                                    android:layout_marginTop="600dp"
+                                    android:fontFamily="@font/actorfont"
+                                    android:text="Soat Date"
+                                    android:textColor="@color/background"
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <DatePicker
+                                    android:id="@+id/SOATDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="27dp"
+                                    android:layout_marginTop="626dp"
+                                    android:calendarViewShown="false"
+                                    android:datePickerMode="spinner"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/contraseñaText3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="27dp"
+                                    android:layout_marginTop="360dp"
+                                    android:fontFamily="@font/actorfont"
+                                    android:text="Pais"
+                                    android:textColor="@color/background"
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/contraseñaText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="24dp"
+                                    android:layout_marginTop="283dp"
+                                    android:fontFamily="@font/actorfont"
+                                    android:text="Ciudad"
+                                    android:textColor="@color/background"
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/correo3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="115dp"
+                                    android:fontFamily="@font/actorfont"
+                                    android:text="Nombre o alias del carro"
+                                    android:textColor="@color/background"
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/correo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginTop="200dp"
+                                    android:fontFamily="@font/actorfont"
+                                    android:text="Placa"
+                                    android:textColor="@color/background"
+                                    android:textStyle="normal"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/carModelInput"
+                                    android:layout_width="266dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="27dp"
+                                    android:layout_marginTop="460dp"
+                                    android:backgroundTint="@color/background"
+                                    android:ems="10"
+                                    android:fontFamily="@font/actorfont"
+                                    android:hint="Modelo"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLength="20"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/carCountryInput"
+                                    android:layout_width="266dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="27dp"
+                                    android:layout_marginTop="386dp"
+                                    android:backgroundTint="@color/background"
+                                    android:ems="10"
+                                    android:fontFamily="@font/actorfont"
+                                    android:hint="Pais"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLength="20"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/carDescriptionInput"
+                                    android:layout_width="266dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="27dp"
+                                    android:layout_marginTop="546dp"
+                                    android:backgroundTint="@color/background"
+                                    android:ems="10"
+                                    android:fontFamily="@font/actorfont"
+                                    android:hint="Descripción"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLength="100"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="99dp"
+                                    android:layout_marginTop="59dp"
+                                    android:fontFamily="@font/actorfont"
+                                    android:text="Registra tu carro"
+                                    android:textColor="@color/background"
+                                    android:textSize="20sp"
+                                    android:textStyle="normal"
+                                    android:typeface="normal"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/carNameInput"
+                                    android:layout_width="265dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="22dp"
+                                    android:layout_marginTop="135dp"
+                                    android:backgroundTint="@color/background"
+                                    android:ems="10"
+                                    android:fontFamily="@font/actorfont"
+                                    android:hint="Nombre"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="20"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/carCityInput"
+                                    android:layout_width="266dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="27dp"
+                                    android:layout_marginTop="306dp"
+                                    android:backgroundTint="@color/background"
+                                    android:ems="10"
+                                    android:fontFamily="@font/actorfont"
+                                    android:hint="Ciudad"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLength="20"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

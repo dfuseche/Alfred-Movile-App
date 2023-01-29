@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_aliados"
+    app:startDestination="@id/activityDetalleAliado">
+    <fragment
+        android:id="@+id/activityDetalleAliado"
+        android:name="com.example.alfred.ActivityDetalleAliado"
+        android:label="activity_detalle_aliado"
+        tools:layout="@layout/activity_detalle_aliado">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/activityAliados"
+        android:name="com.example.alfred.ActivityAliados"
+        android:label="activity_aliados"
+        tools:layout="@layout/activity_aliados" >
+        <action
+            android:id="@+id/action_aliados_to_detalle"
+            app:destination="@id/activityDetalleAliado" />
+    </fragment>
+</navigation>
